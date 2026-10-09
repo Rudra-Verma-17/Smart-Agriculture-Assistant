@@ -3,6 +3,8 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 
+st.set_page_config(page_title="Rudra | Disease Detection", layout="centered")
+
 # Load TFLite model
 interpreter = tf.lite.Interpreter(model_path="plant_disease_model.tflite")
 interpreter.allocate_tensors()
@@ -27,7 +29,7 @@ class_name = ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_ru
               'Tomato___healthy']
 
 # Title
-st.title("🌿 Crop Disease Prediction App")
+st.title("🌿 Rudra Crop Disease Detection")
 
 # Upload section
 uploaded_file = st.file_uploader("📤 Upload a leaf image", type=["jpg", "jpeg", "png"])

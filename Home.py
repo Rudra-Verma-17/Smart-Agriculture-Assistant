@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 # Page config
-st.set_page_config(page_title="AgriNova", layout="wide")
+st.set_page_config(page_title="Rudra", layout="wide")
 
 # Sidebar navigation
 with st.sidebar:
@@ -17,8 +17,8 @@ with st.sidebar:
 # Custom centered header with tighter spacing
 st.markdown("""
     <div style="display: flex; justify-content: center; align-items: center; padding-top: 10px; padding-bottom: 5px;">
-        <h1 style='color: #2E8B57; font-size: 42px; margin: 0;'>🌾 AgriNova 
-        <span style='font-size: 20px; color: gray;'>(Agriculture + Innovation)</span></h1>
+        <h1 style='color: #2E8B57; font-size: 42px; margin: 0;'>🌾 Rudra
+        <span style='font-size: 20px; color: gray;'>(Smart Agriculture Assistant)</span></h1>
     </div>
 """, unsafe_allow_html=True)
 
@@ -27,11 +27,11 @@ st.markdown("---")
 # Home Page
 if selected == "Home":
     with st.container():
-        st.markdown("## 👋 Welcome to AgriNova!")
+        st.markdown("## 👋 Welcome to Rudra!")
         st.markdown("> *“Empowering Farmers with Innovation and Intelligence.”*")
 
         st.markdown("""
-        **AgriNova** is your all-in-one smart farming companion 🌿.  
+        **Rudra** is your all-in-one smart farming companion 🌿.
         This platform supports farmers and agri-enthusiasts by integrating machine learning–driven solutions to optimize crop health, productivity, and sustainability.
         """)
 
@@ -60,13 +60,7 @@ if selected == "Home":
 elif selected == "About":
     st.markdown("## 🤝 About Us")
     st.write("""
-        **AgriNova** is a smart farming web platform developed by a passionate team from **NIT Delhi** 🚀.
-
-        ### 👨‍💻 Team Members:
-        - **Abhishek** – 231212001  
-        - **Gautam** – 231212013  
-        - **Angad** – 231212003  
-        - **Ruchir** – 231212011
+        **Rudra** is an independently developed smart farming web platform, owned by **Rudra** 🚀.
 
         ### 🌟 Our Mission:
         To empower farmers through a fusion of:
@@ -74,11 +68,11 @@ elif selected == "About":
         - 📊 Data-driven decisions  
         - 🌿 Sustainable agricultural practices  
 
-        We believe that the future of agriculture lies in **innovation** — and AgriNova is your partner in that journey.
+        We believe that the future of agriculture lies in **innovation** — and Rudra is your partner in that journey.
     """)
 
-    st.info("📬 For collaborations or queries, reach out at: 231212001@nitdelhi.ac.in")
+    st.info("📬 For collaborations or queries, reach out at: 231212017@nitdelhi.ac.in")
 
 # Footer
 st.markdown("---")
-st.markdown("<p style='text-align: center; font-size: 14px;'>© 2025 AgriNova. Made for Smart Farming.</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-size: 14px;'>© 2025 Rudra. Made for Smart Farming.</p>", unsafe_allow_html=True)

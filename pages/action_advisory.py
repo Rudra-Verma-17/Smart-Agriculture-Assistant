@@ -1,8 +1,24 @@
-import streamlit as st
+import os
+
 import requests
+import streamlit as st
+from streamlit.errors import StreamlitSecretNotFoundError
+
+st.set_page_config(page_title="Rudra | Weather & Advisory", layout="centered")
 
 # --- API Config ---
-weather_api_key = "f354473f1f7e5f9023ed7cc4659fab5f"
+weather_api_key = os.getenv("OPENWEATHER_API_KEY")
+if not weather_api_key:
+    try:
+        weather_api_key = st.secrets["OPENWEATHER_API_KEY"]
+    except StreamlitSecretNotFoundError:
+        weather_api_key = None
+    except KeyError:
+        weather_api_key = None
+if not weather_api_key:
+    st.error("OpenWeather API key is not configured. Set OPENWEATHER_API_KEY in the environment or Streamlit secrets.")
+    st.stop()
+
 base_url = "http://api.openweathermap.org/data/2.5/weather"
 
 # --- State to City Mapping ---
@@ -76,7 +92,7 @@ def get_weather_advice(temperature, humidity, weather_description, wind_speed):
     return advice
 
 # --- UI ---
-st.title("🌦️ Farmify Weather & Advisory")
+st.title("🌦️ Rudra Weather & Advisory")
 
 selected_state = st.selectbox("Select State", list(state_city_map.keys()))
 selected_city = st.selectbox("Select City", state_city_map[selected_state])

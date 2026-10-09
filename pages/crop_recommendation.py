@@ -33,10 +33,10 @@ reversed_crop_dict = {
 }
 
 # Set page configuration
-st.set_page_config(page_title="Crop Recommendation System", layout="centered")
+st.set_page_config(page_title="Rudra | Crop Recommendation", layout="centered")
 
 # Title
-st.title("🌾 Crop Recommendation System")
+st.title("🌾 Rudra Crop Recommendation")
 st.markdown("Enter the soil and climate conditions below. Suggested ranges are based on common agricultural practices.")
 
 # Input form

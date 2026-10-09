@@ -49,8 +49,8 @@ soil_types = ['Sandy', 'Loamy', 'Black', 'Red', 'Clayey']
 crop_types = ['Maize', 'Sugarcane', 'Cotton', 'Tobacco', 'Paddy', 'Barley', 'Wheat', 'Oil seeds', 'Pulses', 'Ground Nuts']
 
 # Streamlit UI
-st.set_page_config(page_title="Fertilizer Recommendation System", layout="centered")
-st.title("🧪 Fertilizer Recommendation System")
+st.set_page_config(page_title="Rudra | Fertilizer Recommendation", layout="centered")
+st.title("🧪 Rudra Fertilizer Recommendation")
 st.markdown("Enter environmental and crop details below to get the best fertilizer recommendation.")
 
 # Input columns
