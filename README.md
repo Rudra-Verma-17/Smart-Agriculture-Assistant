@@ -2,7 +2,7 @@
 
 **Rudra** is a smart farming web application designed to assist farmers and agri-enthusiasts by integrating Deep Learning and data-driven solutions. It provides intelligent support for identifying plant diseases, choosing the right crops and fertilizers, and offering real-time action advice based on weather conditions.
 
-🔗 **Live Demo:** [Rudra on Streamlit](https://smartrudra.streamlit.app/)
+🔗 **Live Demo:** [Rudra on Streamlit](https://smartrudraverma.streamlit.app/)
 
 ---
 
